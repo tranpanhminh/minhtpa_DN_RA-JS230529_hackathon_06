@@ -72,7 +72,9 @@ function App() {
                 value={noteName}
                 onChange={(event) => setNoteName(event.target.value)}
               />
-              <button onClick={handleAdd}>Add</button>
+              <button onClick={handleAdd} className="add-btn">
+                Add
+              </button>
             </div>
           </div>
 
@@ -91,7 +93,10 @@ function App() {
                     <td>{note.id}</td>
                     <td>{note.name}</td>
                     <td className="group-btn">
-                      <button onClick={() => handleDelete(note.id)}>
+                      <button
+                        onClick={() => handleDelete(note.id)}
+                        className="delete-btn"
+                      >
                         Delete
                       </button>
                     </td>
